@@ -7,9 +7,9 @@ const router = express.Router();
 // REGISTER
 router.post('/register', async (req, res) => {
 
-        if (req.body.username == '' || req.body.username == null,
-            req.body.email == '' || req.body.email == null,
-            req.body.password == '' || req.body.password == null
+        if (req.body.username === '' || req.body.username === null,
+            req.body.email === '' || req.body.email === null,
+            req.body.password === '' || req.body.password === null
             ){
                 res.status(400).json(`Thats rude, enter your username, email and password...`)
             };
